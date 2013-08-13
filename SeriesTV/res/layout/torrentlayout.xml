@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+
+	<TextView android:id="@+id/torrentName" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:textSize="24px"
+		android:textColor="#6a6a6a" android:textStyle="bold" android:layout_marginTop="15px"
+		android:layout_marginLeft="10px" />
+	
+	<ProgressBar
+		android:id="@+id/progressBar"
+		style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="640px"
+		android:layout_height="wrap_content"
+		android:max="100"/>
+		
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent" android:gravity="right"
+		android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+		android:layout_weight="1" android:layout_marginRight="10px">
+
+		<TextView android:id="@+id/downloadData" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="20px" 
+			android:textColor="#6a6a6a" android:textStyle="bold" android:gravity="left"
+			android:layout_marginLeft="10px" />
+
+		<TextView android:id="@+id/timeLeft" android:layout_width="wrap_content" android:layout_gravity="right"
+			android:layout_height="wrap_content" android:textSize="20px" android:gravity="right" android:textStyle="bold"
+			android:layout_marginLeft="10px" android:textColor="#6a6a6a" />
+	</LinearLayout>
+	
+	<TextView android:id="@+id/id" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="gone" />
+</LinearLayout>

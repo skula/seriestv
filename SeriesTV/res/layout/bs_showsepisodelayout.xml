@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<TextView android:id="@+id/number" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="25px" android:layout_marginTop="10px"
+		android:textColor="#6a6a6a" android:textStyle="bold" android:layout_marginBottom="10px"
+		android:layout_marginLeft="75px" />
+	<TextView android:id="@+id/url" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="gone" />
+	<TextView android:id="@+id/season" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="gone" />
+	<TextView android:id="@+id/episode" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="gone" />
+	<TextView android:id="@+id/show" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="gone" />
+</LinearLayout>

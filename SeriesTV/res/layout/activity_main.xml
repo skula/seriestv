@@ -1,0 +1,263 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="640px"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type de recherche :"
+                    android:textColor="#6a6a6a"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/searchTypeGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/typeShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Série"
+                        android:textColor="#6a6a6a"
+                        android:textSize="24px" />
+
+                    <RadioButton
+                        android:id="@+id/typeSimple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Autres"
+                        android:textColor="#6a6a6a"
+                        android:textSize="24px" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/simpleSerachLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:text="Nom :"
+                    android:textColor="#6a6a6a"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/searchContent"
+                    android:layout_width="540px"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" />
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/showSearchLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/labelShow"
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:text="Série :"
+                    android:textColor="#6a6a6a"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinTitle"
+                    android:layout_width="240px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:prompt="@string/showsTitle_prompt"
+                    android:textColor="#6a6a6a"
+                    android:textSize="20px" />
+
+                <Button
+                    android:id="@+id/btnDelShow"
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content"
+                    android:text="Supprimer" />
+
+                <Button
+                    android:id="@+id/btnAddShow"
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content"
+                    android:text="Ajouter" />
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/showSearchLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:text="Episode :"
+                    android:textColor="#6a6a6a"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/episodeNumber"
+                    android:layout_width="250px"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#6a6a6a" />
+
+                <Button
+                    android:id="@+id/btnSeasonMinus"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="S-" />
+
+                <Button
+                    android:id="@+id/btnSeasonPlus"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="S+" />
+
+                <Button
+                    android:id="@+id/btnEpisodeMinus"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="E-" />
+
+                <Button
+                    android:id="@+id/btnEpisodePlus"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="E+" />
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/showSearchLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:text="Filtre :"
+                    android:textColor="#6a6a6a"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/filter"
+                    android:layout_width="540px"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Rechercher" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5px"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="10px"
+            android:background="#6a6a6a" />
+
+        <ListView
+            android:id="@+id/episodeList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#ffffff" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="5px"
+        android:layout_height="fill_parent"
+        android:background="#6a6a6a" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="640px"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="50px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="15px"
+                android:text="Url :"
+                android:textColor="#6a6a6a"
+                android:textSize="24px"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/url"
+                android:layout_width="420px"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#6a6a6a" />
+
+            <Button
+                android:id="@+id/btnAddUrl"
+                android:layout_width="170px"
+                android:layout_height="wrap_content"
+                android:text="Télécharger" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/torrentlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

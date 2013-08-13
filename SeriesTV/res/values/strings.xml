@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">SeriesTV</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="menu_refresh">Rafraichir</string>
+    <string name="menu_home">Accueil</string>
+    <string name="title_activity_main">SeriesTV</string>
+<string name="showsTitle_prompt">Series</string>
+</resources>
